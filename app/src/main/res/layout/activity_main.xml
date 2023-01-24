@@ -66,20 +66,10 @@
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 
-        <Button
-            android:id="@+id/pass"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.3"
-            android:textColor="@color/black"
-            android:onClick="pass2Sec"
-            android:text="Calculate"
-            android:backgroundTint="#ff7514" />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.8" />
+            android:layout_weight="0.3" />
     </LinearLayout>
 
     <Space

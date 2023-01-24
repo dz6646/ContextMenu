@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Credits">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="490dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:text="Dan did an oopsy and messed this job a little bit please forgive me :D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

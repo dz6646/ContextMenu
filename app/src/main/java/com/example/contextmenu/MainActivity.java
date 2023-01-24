@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         choose = findViewById(R.id.toggleButton);
         first = findViewById(R.id.first);
         progress = findViewById(R.id.progress);
-        pass = findViewById(R.id.pass);
         series = new String[20];
         si = new Intent(this, resActivity.class);
     }
@@ -38,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
-
-    public void pass2Sec(View view) {
-
     }
 
     public boolean inputCheck(String st)
@@ -75,19 +70,22 @@ public class MainActivity extends AppCompatActivity {
                 }
                 temp = progress.getText().toString();
             }
+            temp = progress.getText().toString();
             if(!temp.isEmpty()) {
                 if (inputCheck(temp)) {
                     si.putExtra("prog", Double.parseDouble(temp));
                 } else {
                     si.putExtra("prog", 0);
                 }
+                startActivity(si);
             }
         }
         else if(color.equals("Credits"))
         {
             si = new Intent(this, Credits.class);
+            startActivity(si);
         }
-        startActivity(si);
+
         return true;
     }
 }
